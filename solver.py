@@ -76,7 +76,9 @@ def find_empty(board):
     return None
 
 
-print_board(board)
-solve(board)
-print("____________________")
-print_board(board)
+if __name__ == "__main__":
+    print("initial")
+    print_board(board)
+    print("\nsolved")
+    solve(board)
+    print_board(board)
